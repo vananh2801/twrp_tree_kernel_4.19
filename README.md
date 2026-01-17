@@ -25,23 +25,23 @@
 Current state of features (from [here](https://twrp.me/faq/OfficialMaintainer.html)):
 
 ### Blocking checks
-- [x] Correct screen/recovery size
-- [x] Working Touch, screen
-- [x] Backup to internal/microSD
-- [x] Restore from internal/microSD
+- [x] correct screen/recovery size
+- [x] working touch, screen
+- [x] backup to internal/microSD
+- [x] restore from internal/microSD
 - [x] reboot to system
 - [x] ADB
 
 ### Medium checks
-- [ ] update.zip sideload
-- [ ] UI colors (red/blue inversions)
-- [ ] Screen goes off and on (The power button is working but the phone shuts down automatically after several minutes) 
+- [ ] update.zip sideload (No one tested OTA.zip. Still fixing symlink to /dev/block/bootdevice/by-name, mediatek might not support)
+- [x] UI colors (red/blue inversions)
+- [x] screen goes off and on
 - [x] F2FS/EXT4 Support, exFAT/NTFS where supported
 - [x] all important partitions listed in mount/backup lists
 - [x] backup/restore to/from external (USB-OTG) storage (not supported by the device)
 - [x] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
 - [x] decrypt /data
-- [x] Correct date
+- [x] correct date
 
 ### Minor checks
 - [x] MTP export
