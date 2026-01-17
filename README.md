@@ -21,46 +21,42 @@
 | Fingerprint             | Rear-mounted                                                    |
 | Sensors                 | Accelerometer, Gyro, Virtual Proximity, Compass                         |
 
-## Device picture
-
-![fleur/miel](https://github.com/ShazuxD/extras/raw/main/IMG/b09176f07d84e119623b4d218bfea455.png)
-
 # Status
 Current state of features (from [here](https://twrp.me/faq/OfficialMaintainer.html)):
 
 ### Blocking checks
-- [ ] Correct screen/recovery size
-- [ ] Working Touch, screen
-- [ ] Backup to internal/microSD
-- [ ] Restore from internal/microSD
-- [ ] reboot to system
-- [ ] ADB
+- [x] Correct screen/recovery size
+- [x] Working Touch, screen
+- [x] Backup to internal/microSD
+- [x] Restore from internal/microSD
+- [x] reboot to system
+- [x] ADB
 
 ### Medium checks
 - [ ] update.zip sideload
 - [ ] UI colors (red/blue inversions)
-- [ ] Screen goes off and on
-- [ ] F2FS/EXT4 Support, exFAT/NTFS where supported
-- [ ] all important partitions listed in mount/backup lists
-- [ ] backup/restore to/from external (USB-OTG) storage (not supported by the device)
-- [ ] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
-- [ ] decrypt /data
-- [ ] Correct date
+- [ ] Screen goes off and on (The power button is working but the phone shuts down automatically after several minutes) 
+- [x] F2FS/EXT4 Support, exFAT/NTFS where supported
+- [x] all important partitions listed in mount/backup lists
+- [x] backup/restore to/from external (USB-OTG) storage (not supported by the device)
+- [x] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
+- [x] decrypt /data
+- [x] Correct date
 
 ### Minor checks
-- [ ] MTP export
-- [ ] reboot to bootloader
-- [ ] reboot to recovery
-- [ ] poweroff
-- [ ] battery level
-- [ ] temperature
-- [ ] encrypted backups
-- [ ] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
-- [ ] USB mass storage export
-- [ ] set brightness
-- [ ] vibrate
-- [ ] screenshot
-- [ ] partition SD card
+- [x] MTP export
+- [x] reboot to bootloader
+- [x] reboot to recovery
+- [x] poweroff
+- [x] battery level
+- [x] temperature
+- [x] encrypted backups
+- [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
+- [x] USB mass storage export
+- [x] set brightness
+- [x] vibrate
+- [x] screenshot
+- [x] partition SD card
 
 # Building
 ```bash
