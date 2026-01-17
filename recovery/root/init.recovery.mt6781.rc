@@ -82,3 +82,17 @@ on boot
     start boot-hal-1-2
     start health-hal-2-1
     start vibrator-fleur
+
+# Fix auto reboot
+on init
+    write /sys/class/watchdog/watchdog0/enable 0
+    write /proc/sys/kernel/hung_task_timeout_secs 0
+    write /sys/class/thermal/thermal_zone0/mode disabled
+    write /sys/class/thermal/thermal_zone1/mode disabled
+
+# Fix auto reboot
+on boot
+    stop watchdogd
+    stop thermal
+    stop thermal_manager
+    stop thermald
