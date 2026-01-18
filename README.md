@@ -33,7 +33,7 @@ Current state of features (from [here](https://twrp.me/faq/OfficialMaintainer.ht
 - [x] ADB
 
 ### Medium checks
-- [ ] update.zip sideload (No one tested OTA.zip. Still fixing symlink to /dev/block/bootdevice/by-name, mediatek might not support)
+- [x] update.zip sideload (Added support symlink to /dev/block/bootdevice/by-name on mediatek device)
 - [x] UI colors (red/blue inversions)
 - [x] screen goes off and on
 - [x] F2FS/EXT4 Support, exFAT/NTFS where supported
