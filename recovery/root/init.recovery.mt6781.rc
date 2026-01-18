@@ -96,3 +96,15 @@ on boot
     stop thermal
     stop thermal_manager
     stop thermald
+
+# Fix "Could not find the directory /dev/block/bootdevice/by-name"
+service fix_mtk_symlink /system/bin/runatboot.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
+on fs
+    chmod 0755 /system/bin/runatboot.sh
+    start fix_mtk_symlink
