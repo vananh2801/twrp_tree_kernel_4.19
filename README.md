@@ -42,6 +42,7 @@ Current state of features (from [here](https://twrp.me/faq/OfficialMaintainer.ht
 - [x] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
 - [x] decrypt /data
 - [x] correct date
+- [ ] format data
 
 ### Minor checks
 - [x] MTP export
